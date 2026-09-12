@@ -120,4 +120,9 @@ screenshots
 deployed
 https://imaginative-klepon-e76855.netlify.app/
 
+video
+https://github.com/user-attachments/assets/3d267db3-220c-4bd5-a605-e9dd04c11b95
+
+
+
 
