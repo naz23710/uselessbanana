@@ -117,6 +117,7 @@ screenshots
 * 🔄 Support for multiple pens and caps
 ## 👨‍💻 Team
 
-Built as a **beginner-friendly hackathon project** to explore computer vision and web development.
+deployed
+https://imaginative-klepon-e76855.netlify.app/
 
 
