@@ -1,0 +1,752 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+:root {
+
+    --bg: #f7f5ef;
+
+    --ink: #171717;
+
+    --muted: #737373;
+
+    --yellow: #ffd84d;
+
+    --purple: #7057ff;
+
+    --card: #ffffff;
+
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: var(--bg);
+
+    color: var(--ink);
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 24px;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 8px 0 45px;
+
+}
+
+
+.logo {
+
+    font-size: 23px;
+
+    font-weight: 900;
+
+}
+
+
+.logo span {
+
+    letter-spacing: -1px;
+
+}
+
+
+.badge {
+
+    background: #171717;
+
+    color: white;
+
+    border-radius: 30px;
+
+    padding: 9px 15px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    text-align: center;
+
+    margin-bottom: 38px;
+
+}
+
+
+.eyebrow {
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    color: var(--purple);
+
+    margin-bottom: 12px;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(
+            42px,
+            7vw,
+            76px
+        );
+
+    line-height: .95;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.hero h1 span {
+
+    background: var(--yellow);
+
+    padding: 0 10px;
+
+    border-radius: 8px;
+
+}
+
+
+.subtitle {
+
+    max-width: 580px;
+
+    margin: auto;
+
+    color: var(--muted);
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.tester-card {
+
+    max-width: 760px;
+
+    margin: auto;
+
+    background: var(--card);
+
+    border: 2px solid #171717;
+
+    border-radius: 25px;
+
+    padding: 24px;
+
+    box-shadow:
+        8px 8px 0 #171717;
+
+}
+
+
+/* =========================
+   DROP AREA
+========================= */
+
+.drop-zone {
+
+    min-height: 390px;
+
+    border:
+        2px dashed
+        #bcbcbc;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 25px;
+
+    transition: .2s;
+
+}
+
+
+.drop-zone.dragover {
+
+    background: #f1edff;
+
+    border-color:
+        var(--purple);
+
+}
+
+
+/* =========================
+   CAMERA ICON
+========================= */
+
+.camera-icon {
+
+    font-size: 55px;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* =========================
+   UPLOAD AREA TEXT
+========================= */
+
+.drop-zone h2 {
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.drop-zone p {
+
+    color: var(--muted);
+
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+
+}
+
+
+.btn {
+
+    border:
+        2px solid
+        #171717;
+
+    border-radius: 12px;
+
+    padding: 13px 20px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    transition: .15s;
+
+    font-size: 14px;
+
+}
+
+
+.btn:hover {
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+.btn:active {
+
+    transform:
+        translateY(1px);
+
+}
+
+
+.btn.primary {
+
+    background:
+        var(--yellow);
+
+}
+
+
+.btn.secondary {
+
+    background:
+        white;
+
+}
+
+
+/* =========================
+   HINT
+========================= */
+
+.hint {
+
+    font-size: 12px;
+
+    margin-top: 18px;
+
+}
+
+
+/* =========================
+   IMAGE PREVIEW
+========================= */
+
+#preview {
+
+    display: block;
+
+    max-width: 100%;
+
+    max-height: 430px;
+
+    border-radius: 14px;
+
+    object-fit: contain;
+
+    margin: auto;
+
+}
+
+
+/* =========================
+   REMOVE BUTTON
+========================= */
+
+.remove {
+
+    margin-top: 15px;
+
+    border: none;
+
+    background:
+        transparent;
+
+    color: #d33;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================
+   ANALYZE BUTTON
+========================= */
+
+.analyze {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 17px;
+
+    border:
+        2px solid
+        #171717;
+
+    border-radius: 14px;
+
+    background:
+        var(--purple);
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+
+    box-shadow:
+        4px 4px 0 #171717;
+
+}
+
+
+.analyze:hover {
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+.analyze:disabled {
+
+    opacity: .7;
+
+    cursor: wait;
+
+}
+
+
+/* =========================
+   RESULT
+========================= */
+
+.result {
+
+    margin-top: 25px;
+
+    padding: 30px;
+
+    background:
+        #f8f7ff;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    border:
+        2px solid
+        #ded9ff;
+
+}
+
+
+.result-emoji {
+
+    font-size: 45px;
+
+}
+
+
+.result-label {
+
+    color:
+        var(--purple);
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    margin: 8px 0;
+
+}
+
+
+.result h2 {
+
+    font-size: 34px;
+
+}
+
+
+/* =========================
+   SCORE
+========================= */
+
+.score-wrap {
+
+    max-width: 440px;
+
+    margin: 20px auto;
+
+}
+
+
+.score-number {
+
+    font-size: 55px;
+
+    font-weight: 900;
+
+}
+
+
+.score-number small {
+
+    font-size: 25px;
+
+}
+
+
+.meter {
+
+    height: 14px;
+
+    background: #ddd;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+#meterFill {
+
+    height: 100%;
+
+    width: 0%;
+
+    background:
+        var(--purple);
+
+    border-radius: 20px;
+
+    transition:
+        width 1s ease;
+
+}
+
+
+.reason {
+
+    max-width: 550px;
+
+    margin:
+        15px auto 22px;
+
+    line-height: 1.6;
+
+    color: #555;
+
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how {
+
+    padding:
+        80px 0 50px;
+
+    text-align: center;
+
+}
+
+
+.how h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.steps {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.steps div {
+
+    background: white;
+
+    border:
+        2px solid
+        #171717;
+
+    border-radius: 17px;
+
+    padding: 22px;
+
+    text-align: left;
+
+}
+
+
+.steps b {
+
+    color:
+        var(--purple);
+
+    font-size: 12px;
+
+}
+
+
+.steps span {
+
+    display: block;
+
+    margin-top: 15px;
+
+    font-weight: 800;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    color: #999;
+
+    font-size: 11px;
+
+    padding: 20px;
+
+}
+
+
+/* =========================
+   HIDDEN
+========================= */
+
+.hidden {
+
+    display: none !important;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (
+    max-width: 650px
+) {
+
+    .app {
+
+        padding: 16px;
+
+    }
+
+
+    header {
+
+        padding-bottom: 30px;
+
+    }
+
+
+    .badge {
+
+        display: none;
+
+    }
+
+
+    .hero h1 {
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .tester-card {
+
+        padding: 14px;
+
+        box-shadow:
+            5px 5px 0 #171717;
+
+    }
+
+
+    .drop-zone {
+
+        min-height: 350px;
+
+    }
+
+
+    .steps {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}

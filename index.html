@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>PenCap - Compatibility Tester</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            🖊️ <span>PenCap</span>
+        </div>
+
+        <div class="badge">
+            Totally unnecessary. Surprisingly useful.
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <p class="eyebrow">
+                THE WORLD'S MOST IMPORTANT PEN TECHNOLOGY
+            </p>
+
+
+            <h1>
+                Do these two belong
+                <br>
+
+                <span>together?</span>
+            </h1>
+
+
+            <p class="subtitle">
+
+                Upload a photo of a pen and its suspiciously
+                unrelated cap. We'll judge their relationship.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= TESTER ================= -->
+
+        <section class="tester-card">
+
+
+            <div
+                id="dropZone"
+                class="drop-zone"
+            >
+
+
+                <!-- EMPTY STATE -->
+
+                <div id="emptyState">
+
+
+                    <div class="camera-icon">
+                        📸
+                    </div>
+
+
+                    <h2>
+                        Show us the pen + cap
+                    </h2>
+
+
+                    <p>
+                        Upload a photo or use your camera.
+                    </p>
+
+
+
+                    <div class="buttons">
+
+
+                        <!-- UPLOAD BUTTON -->
+
+                        <button
+                            id="uploadButton"
+                            class="btn primary"
+                        >
+
+                            📁 Upload Photo
+
+                        </button>
+
+
+
+                        <!-- CAMERA BUTTON -->
+
+                        <button
+                            id="cameraButton"
+                            class="btn secondary"
+                        >
+
+                            📷 Take Photo
+
+                        </button>
+
+
+
+                        <!-- HIDDEN FILE INPUT -->
+
+                        <input
+                            id="fileInput"
+                            type="file"
+                            accept="image/*"
+                            hidden
+                        >
+
+
+
+                        <!-- CAMERA INPUT -->
+
+                        <input
+                            id="cameraInput"
+                            type="file"
+                            accept="image/*"
+                            capture="environment"
+                            hidden
+                        >
+
+                    </div>
+
+
+
+                    <p class="hint">
+
+                        Best results: place the pen and cap next
+                        to each other on a plain surface.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- ================= PREVIEW ================= -->
+
+                <div
+                    id="previewState"
+                    class="hidden"
+                >
+
+                    <img
+                        id="preview"
+                        alt="Uploaded pen and cap"
+                    >
+
+
+                    <button
+                        id="removeBtn"
+                        class="remove"
+                    >
+
+                        ✕ Remove photo
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= ANALYZE BUTTON ================= -->
+
+            <button
+                id="analyzeBtn"
+                class="analyze hidden"
+            >
+
+                🔍 Test Compatibility
+
+            </button>
+
+
+
+            <!-- ================= RESULT ================= -->
+
+            <div
+                id="result"
+                class="result hidden"
+            >
+
+
+                <div
+                    id="resultEmoji"
+                    class="result-emoji"
+                >
+
+                    🟢
+
+                </div>
+
+
+
+                <p class="result-label">
+
+                    COMPATIBILITY RESULT
+
+                </p>
+
+
+
+                <h2 id="resultTitle">
+
+                    Compatible!
+
+                </h2>
+
+
+
+                <!-- SCORE -->
+
+                <div class="score-wrap">
+
+
+                    <div class="score-number">
+
+                        <span id="score">
+                            87
+                        </span>
+
+                        <small>
+                            %
+                        </small>
+
+                    </div>
+
+
+
+                    <div class="meter">
+
+                        <div
+                            id="meterFill"
+                        ></div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- REASON -->
+
+                <p
+                    id="reason"
+                    class="reason"
+                ></p>
+
+
+
+                <!-- TRY AGAIN -->
+
+                <button
+                    id="tryAgain"
+                    class="btn secondary"
+                >
+
+                    🔄 Test Another Pair
+
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="how">
+
+
+            <h2>
+                How it works
+            </h2>
+
+
+
+            <div class="steps">
+
+
+                <div>
+
+                    <b>
+                        01
+                    </b>
+
+                    <span>
+
+                        📸
+                        <br>
+
+                        Take a photo
+
+                    </span>
+
+                </div>
+
+
+
+                <div>
+
+                    <b>
+                        02
+                    </b>
+
+                    <span>
+
+                        🤖
+                        <br>
+
+                        We analyze it
+
+                    </span>
+
+                </div>
+
+
+
+                <div>
+
+                    <b>
+                        03
+                    </b>
+
+                    <span>
+
+                        ⚖️
+                        <br>
+
+                        We judge them
+
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        Made for absolutely no practical reason whatsoever.
+        © 2026 PenCap
+
+    </footer>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
